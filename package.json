@@ -1,9 +1,10 @@
 {
     "name": "pdi-java-highlighter",
-    "displayName": "KTR/KJB Java Highlighter",
+    "displayName": "pdi-java-highlighter",
     "description": "Syntax highlighting for Java code in Pentaho .ktr and .kjb files",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "ArmanGrewal007",
+    "icon": "images/icon.png",
     "license": "MIT",
     "engines": {
         "vscode": "^1.60.0"
