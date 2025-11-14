@@ -1,0 +1,105 @@
+# Exclude local editor and IDE settings
+.vscode/
+.vscodeignore
+*.code-workspace
+
+# Git and GitHub
+.git/
+.gitignore
+.github/
+
+# OS files
+.DS_Store
+Thumbs.db
+._*
+
+# Editor swap/backup files
+*.swp
+*.swo
+*.sublime*
+*.iml
+.idea/
+
+# Node/npm artifacts (exclude by default; node_modules may be needed if your extension bundles runtime deps)
+node_modules/
+npm-debug.log*
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+.yarn/
+
+# Build, test and packaging artifacts
+dist/
+out/
+coverage/
+.vscode-test/
+*.tgz
+*.tsbuildinfo
+
+# Logs, env and caches
+*.log
+.env
+.env.*
+.cache/
+
+# Ignore test folders
+test/
+tests/
+
+# Keep these project files in the package (explicitly do NOT ignore):
+# package.json
+# README.md
+# LICENSE
+# syntaxes/, snippets/, language-configuration.json
+# .vscodeignore - files to exclude when packaging this VS Code extension
+# Keep this file in the repo root. It reduces the size of the produced .vsix by
+# excluding development, CI and editor-specific files while ensuring the
+# extension assets remain included.
+
+# Node modules and build outputs (not needed for this simple highlighter repo)
+node_modules/**
+dist/**
+out/**
+
+# Editor/IDE and OS metadata
+.vscode/**
+.idea/**
+.vs/**
+*.code-workspace
+
+# VCS and related files
+.git/**
+.gitignore
+.gitattributes
+
+# Tests, coverage, tooling and scripts
+test/**
+tests/**
+coverage/**
+scripts/**
+tools/**
+
+# Misc dev/config files
+.eslintrc*
+.prettierrc*
+.npmrc
+*.log
+npm-debug.log*
+yarn-error.log*
+.env
+*.tgz
+
+# VS Code test runner artifacts
+.vscode-test/**
+
+# Exclude the .vscodeignore itself from packaged contents by default
+.vscodeignore
+
+# --- Explicit inclusions ---
+# The extension needs these files and folders; make sure they are kept in the package.
+!package.json
+!README.md
+!LICENSE
+!language-configuration.json
+!syntaxes/**
+!snippets/**
