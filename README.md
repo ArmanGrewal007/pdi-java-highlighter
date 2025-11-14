@@ -1,4 +1,4 @@
-# KTR/KJB Java Highlighter
+<div align="center"><h1> KTR/KJB Java Highlighter </h1></div>
 
 Syntax highlighting for Java code embedded in Pentaho Data Integration (PDI) `.ktr` and `.kjb` files.
 
@@ -6,36 +6,16 @@ Syntax highlighting for Java code embedded in Pentaho Data Integration (PDI) `.k
 
 ✨ **Java Syntax Highlighting** - Full Java syntax highlighting inside `<class_source>` blocks  
 🔍 **Code Folding** - Collapse/expand `<class_source>` blocks for easier navigation  
-⚡ **Quick Snippets** - Type `class_source` to insert a new Java code block  
-🎯 **Symbol Search** - Use Cmd+Shift+O to navigate to `<class_source>` blocks quickly
 
 ## Usage Tips
 
-### Navigate Large XML Files
+### Local installation
+1. Clone the repo
+2. `npm install -g @vscode/vsce`
+2. `vsce package` 
+3. `code --install-extension pdi-java-highlighter-0.0.1.vsix`
+4. Reload VS Code
 
-1. **Fold Everything**: Press `Cmd+K Cmd+0` to fold all sections
-2. **Unfold Class Source**: Click the fold arrows next to `<class_source>` tags
-3. **Symbol Navigation**: Press `Cmd+Shift+O` and type "class_source" to jump between blocks
-
-### Insert New Java Code
-
-Type `class_source` and press Tab to insert a new `<class_source>` block with cursor ready for coding.
-
-### Search for Java Blocks
-
-Use `Cmd+F` and search for `<class_source>` to quickly jump between Java code sections in large files.
-
-## Installation
-
-1. Download the `.vsix` file
-2. Run: `code --install-extension pdi-java-highlighter-0.0.1.vsix`
-3. Reload VS Code
-
-## Supported Files
-
-- `.ktr` - Kettle Transformation files
-- `.kjb` - Kettle Job files
-
-## License
-
-MIT License - see LICENSE file for details
+### Uploading to Marketplace
+1. `vsce login ArmanGrewal007`
+2. `vsce publish`
