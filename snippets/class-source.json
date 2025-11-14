@@ -1,0 +1,19 @@
+{
+    "Class Source Block": {
+        "prefix": "class_source",
+        "body": [
+            "<class_source>",
+            "\t$1",
+            "</class_source>"
+        ],
+        "description": "Insert a class_source block for Java code"
+    },
+    "Jump to Class Source": {
+        "prefix": "jcs",
+        "body": [
+            "<class_source>",
+            "</class_source>"
+        ],
+        "description": "Quick snippet to find class_source blocks"
+    }
+}

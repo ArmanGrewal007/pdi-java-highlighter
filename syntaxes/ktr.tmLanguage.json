@@ -1,0 +1,35 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Kettle Transformation",
+    "scopeName": "text.xml.ktr",
+    "patterns": [
+        {
+            "include": "#class-source"
+        },
+        {
+            "include": "text.xml"
+        }
+    ],
+    "repository": {
+        "class-source": {
+            "name": "meta.embedded.block.java",
+            "begin": "(<class_source>)",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.tag.xml entity.name.tag.xml"
+                }
+            },
+            "end": "(</class_source>)",
+            "endCaptures": {
+                "1": {
+                    "name": "meta.tag.xml entity.name.tag.xml"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "source.java"
+                }
+            ]
+        }
+    }
+}

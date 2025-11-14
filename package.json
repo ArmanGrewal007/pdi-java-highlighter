@@ -1,0 +1,72 @@
+{
+    "name": "pdi-java-highlighter",
+    "displayName": "KTR/KJB Java Highlighter",
+    "description": "Syntax highlighting for Java code in Pentaho .ktr and .kjb files",
+    "version": "0.0.1",
+    "publisher": "ArmanGrewal007",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArmanGrewal007/pdi-java-highlighter.git"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "ktr",
+                "aliases": [
+                    "Kettle Transformation",
+                    "ktr"
+                ],
+                "extensions": [
+                    ".ktr"
+                ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "kjb",
+                "aliases": [
+                    "Kettle Job",
+                    "kjb"
+                ],
+                "extensions": [
+                    ".kjb"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ktr",
+                "scopeName": "text.xml.ktr",
+                "path": "./syntaxes/ktr.tmLanguage.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.java": "java"
+                }
+            },
+            {
+                "language": "kjb",
+                "scopeName": "text.xml.kjb",
+                "path": "./syntaxes/kjb.tmLanguage.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.java": "java"
+                }
+            }
+        ],
+        "snippets": [
+            {
+                "language": "ktr",
+                "path": "./snippets/class-source.json"
+            },
+            {
+                "language": "kjb",
+                "path": "./snippets/class-source.json"
+            }
+        ]
+    }
+}
